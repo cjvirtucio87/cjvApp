@@ -2,3 +2,25 @@
 @import "bootstrap";
 @import "posts";
 @import "scaffolds";
+
+
+/*Basic structure.*/
+html,
+body {
+  height: 100%;
+  background-color: #003333;
+}
+body {
+  color: #fff;
+  text-align: center;
+}
+
+/*Containers.*/
+.home-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  margin: 
+}
