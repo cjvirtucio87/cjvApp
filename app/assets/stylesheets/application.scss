@@ -3,6 +3,12 @@
 @import "posts";
 @import "scaffolds";
 
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
 
 /*Basic structure.*/
 html,
@@ -15,8 +21,68 @@ body {
   text-align: center;
 }
 
-/*Containers.*/
-.home-container {
-  margin-left: auto;
-  margin-right: auto;
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+
+/* Padding for spacing */
+.inner {
+  padding: 40px;
+}
+
+
+/* Header */
+.masthead-brand {
+  font-size: 16px;
+  font-weight: bold;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav {
+  float: right;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+
+.masthead-nav > li + li {
+  margin-left: 18px;
+}
+
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+}
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.cover {
+  padding: 0px 20px;
 }
