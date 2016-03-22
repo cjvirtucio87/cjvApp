@@ -40,6 +40,9 @@ body {
   padding: 40px;
 }
 
+.inner p::first-line {
+  color: #d9d9d9;
+}
 
 /* Header */
 .masthead-nav {
