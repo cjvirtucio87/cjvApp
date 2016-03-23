@@ -57,6 +57,14 @@ body {
 
 
 /* Extra detailing, colors, etc. */
+p {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.cover h1:first-of-type {
+  font-size: 4em;
+  font-family: 'Satisfy',
+}
 
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
