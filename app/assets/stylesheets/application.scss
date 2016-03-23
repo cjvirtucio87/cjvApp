@@ -3,48 +3,21 @@
 @import "posts";
 @import "scaffolds";
 
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
+/* Basic structure. */
 
-
-/*Basic structure.*/
 html,
 body {
   height: 100%;
-  background-color: #003333;
+  background-color: black;
 }
+
 body {
   color: #fff;
   text-align: center;
 }
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-}
+/* Masthead basic structure. */
 
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-
-
-/* Padding for spacing */
-.inner {
-  padding: 40px;
-}
-
-.inner p::first-line {
-  color: #d9d9d9;
-}
-
-/* Header */
 .masthead-nav {
   float: right;
   margin-right: 35px;
@@ -67,9 +40,28 @@ body {
   border-bottom: 2px solid transparent;
 }
 
+
+/* Centering and extra padding. */
+.col-centered {
+  float: none;
+  display: inline-block;
+}
+
+.cover {
+  padding: 0px 20px;
+}
+
+.row {
+  padding-top: 5px;
+}
+
+
+/* Extra detailing, colors, etc. */
+
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
+  border-bottom: 2px solid red;
 }
 
 .masthead-nav > .active > a,
@@ -79,6 +71,6 @@ body {
   border-bottom-color: #fff;
 }
 
-.cover {
-  padding: 0px 20px;
+.cover p:first-line {
+  color: gray;
 }
