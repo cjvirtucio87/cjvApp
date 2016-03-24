@@ -82,3 +82,12 @@ p {
 .cover p:first-line {
   color: gray;
 }
+
+.subheading p::before {
+  content: "";
+  background-color: red;
+  border: 2px solid transparent;
+  width: 5px;
+  height: 5px;
+  position: relative;
+}
