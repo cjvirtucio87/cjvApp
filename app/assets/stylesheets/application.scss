@@ -83,7 +83,7 @@ p {
   color: gray;
 }
 
-.subheading p::before {
+.subheading p:before {
   content: "";
   background-color: red;
   border: 2px solid transparent;
