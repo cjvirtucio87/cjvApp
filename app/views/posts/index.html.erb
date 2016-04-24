@@ -1,6 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Posts</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Listing Posts</h1>
+      <div class="row">
+        <% @posts.each do |post| %>
+          <div class="col-xs-6 col-xs-offset-3 tile">
+            <h3><%= post.title %></h3>
+            <p><%= post.body %></p>
+            <ul class="nav nav-pills">
+              <li><%= link_to 'Show', post %></li>
+              <li><%= link_to 'Edit', edit_post_path(post) %></li>
+              <li><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+            </ul>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <table>
   <thead>
@@ -12,18 +33,15 @@
   </thead>
 
   <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.body %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+
   </tbody>
 </table>
 
 <br>
 
 <%= link_to 'New Post', new_post_path %>
+
+
+
+
+
